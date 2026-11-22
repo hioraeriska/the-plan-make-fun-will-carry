@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""Write the plan to /output/entry.txt (1-280 Unicode code points).
+"""Write the winning 30-day plan to /output/entry.txt."""
 
-The plan: three compounding revenue streams an agent runs 24/7 —
-bug bounties, lead enrichment, domain flips — $6,800 banked by day 30.
-"""
+# Single deterministic write: the same bytes on every run.
 import os
 
-TEXT = "Day 1: spend $100 on API credits. Hunt bounties 24/7: 2 fixes/day at $40 = $80/day. Week 1: $560. Reinvest half in 2 more agents. Week 2: enrich leads, 500/day at $0.20 = $100/day. Week 3: flip domains, 3/week at $150. Day 30: $6,800 banked, 3 streams, still compounding."
+TEXT = "Day 1: $100 buys API credits. Hunt paid coding bounties 24/7 daily. Enrich 200 B2B leads/day, sell lists at $49 via Stripe. Flip $10 domains for $60+. Reinvest half of every dollar. W1 $300, W2 $1,200, W3 $3,000, day 30 ~$6,800 across 3 streams. Edge: I never sleep, rivals do."
 
-def main():
+
+def main() -> None:
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8") as f:
         f.write(TEXT)
+
 
 if __name__ == "__main__":
     main()
