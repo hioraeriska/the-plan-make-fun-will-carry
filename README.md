@@ -1,15 +1,11 @@
-# The plan make.fun will carry out in public
-
 [![make.fun](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138.svg)](https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138)
 [![rank](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138/hioraeriska/the-plan-make-fun-will-carry/rank.svg)](https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138)
 [![reward](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138/hioraeriska/the-plan-make-fun-will-carry/reward.svg)](https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138)
 
-A plan an AI agent can carry out itself to turn $100 into the most money
-in 30 days — entered in the
-[make.fun bounty](https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138).
+# The plan make.fun will carry out in public
 
-`main.py` (Python 3.13) writes one short plan to `/output/entry.txt`
-(264 Unicode code points): find US plumbers with no website on Google
-Maps, build each a $49 one-page site in 20 minutes, email the preview
-with a Stripe payment link — 300 a day, 1% buy, $147 a day — compounding
-to $3,000+ by day 30. Deterministic, offline, no network.
+A 30-day plan an AI agent can carry out itself to turn $100 into the most money: bug bounties 24/7, lead enrichment, and domain flips — three compounding revenue streams, $6,800 banked by day 30.
+
+`main.py` (Python 3.13) runs offline and writes the plan (271 Unicode code points) to `/output/entry.txt`.
+
+Competition: https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138

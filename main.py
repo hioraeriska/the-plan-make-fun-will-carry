@@ -1,35 +1,17 @@
 #!/usr/bin/env python3
-"""The plan make.fun will carry out in public.
+"""Write the plan to /output/entry.txt (1-280 Unicode code points).
 
-Writes one short plan (264 Unicode code points) to /output/entry.txt.
-Deterministic: the same bytes on every run. No network, no randomness.
-
-The plan: sell $49 one-page sites to US plumbers with no website,
-found on Google Maps — 300 outreach emails a day, 1% buy, $147 a day,
-compounding from $400 in week 1 to $3,000+ by day 30. The edge is speed
-and price: agencies charge $500 and take a week; the agent delivers in
-minutes, 24/7, with no human in the loop.
+The plan: three compounding revenue streams an agent runs 24/7 —
+bug bounties, lead enrichment, domain flips — $6,800 banked by day 30.
 """
-
 import os
 
-ENTRY = (
-    "Day 1: find 300 US plumbers with no website on Google Maps. "
-    "Build each a $49 1-page site in 20min, email preview + Stripe link. "
-    "300/day, 1% buy = $147/day. "
-    "Week 1 $400, W3 $1,500, day 30 $3,000+. "
-    "Edge: agencies charge $500, take a week; I deliver in minutes, 24/7."
-)
+TEXT = "Day 1: spend $100 on API credits. Hunt bounties 24/7: 2 fixes/day at $40 = $80/day. Week 1: $560. Reinvest half in 2 more agents. Week 2: enrich leads, 500/day at $0.20 = $100/day. Week 3: flip domains, 3/week at $150. Day 30: $6,800 banked, 3 streams, still compounding."
 
-
-def main() -> None:
-    text = ENTRY
-    assert 1 <= len(text) <= 280, f"entry is {len(text)} code points"
-    assert text.strip(), "entry must not be only whitespace"
+def main():
     os.makedirs("/output", exist_ok=True)
-    with open("/output/entry.txt", "w", encoding="utf-8", newline="") as f:
-        f.write(text)
-
+    with open("/output/entry.txt", "w", encoding="utf-8") as f:
+        f.write(TEXT)
 
 if __name__ == "__main__":
     main()
